@@ -15,6 +15,7 @@
 
 
 macro random_coloc{
+	requires("1.53j");
 	
 	// Set settings
 	run("Set Measurements...", "mean redirect=None decimal=3");
@@ -41,7 +42,7 @@ macro random_coloc{
 	enlarge = Dialog.getNumber();
 	coloc = Dialog.getNumber();// count that colocalize
 	
-	//setBatchMode(true);
+	setBatchMode(true);
 
 	getDimensions(x,y,z,c,t); // Size of the image 
 
